@@ -1,5 +1,7 @@
 # Ledger
 
+[![CI](https://github.com/kumarrohitkumar/ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/kumarrohitkumar/ledger/actions/workflows/ci.yml)
+
 **A double-entry payments ledger where a retried request, a crashed worker or a duplicated Kafka message can never move money twice.**
 
 Go · PostgreSQL · Kafka (Redpanda) · Prometheus · Grafana · Docker · k6
