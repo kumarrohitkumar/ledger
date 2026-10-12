@@ -1,0 +1,240 @@
+Unable to find image 'grafana/k6:0.54.0' locally
+0.54.0: Pulling from grafana/k6
+4f4fb700ef54: Pulling fs layer
+f2fc57ab4a3d: Pulling fs layer
+35dae20296e8: Pulling fs layer
+4f4fb700ef54: Already exists
+f2fc57ab4a3d: Download complete
+f2fc57ab4a3d: Pull complete
+35dae20296e8: Download complete
+4f4fb700ef54: Pull complete
+35dae20296e8: Pull complete
+Digest: sha256:1f40432b1cbe7234e977f96c362c9bc550a2d2b583d014dd8669fe40d3e9e755
+Status: Downloaded newer image for grafana/k6:0.54.0
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: /scripts/transfers.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 400 max VUs, 1m30s max duration (incl. graceful stop):
+              * transfers: 500.00 iterations/s for 1m0s (maxVUs: 100-400, gracefulStop: 30s)
+
+
+running (0m01.0s), 001/100 VUs, 377 complete and 0 interrupted iterations
+transfers   [   1% ] 002/100 VUs  0m00.8s/1m0s  500.00 iters/s
+
+running (0m02.0s), 000/100 VUs, 878 complete and 0 interrupted iterations
+transfers   [   3% ] 000/100 VUs  0m01.8s/1m0s  500.00 iters/s
+
+running (0m03.0s), 000/100 VUs, 1378 complete and 0 interrupted iterations
+transfers   [   5% ] 001/100 VUs  0m02.8s/1m0s  500.00 iters/s
+
+running (0m04.0s), 000/100 VUs, 1878 complete and 0 interrupted iterations
+transfers   [   6% ] 000/100 VUs  0m03.8s/1m0s  500.00 iters/s
+
+running (0m05.0s), 002/100 VUs, 2377 complete and 0 interrupted iterations
+transfers   [   8% ] 002/100 VUs  0m04.8s/1m0s  500.00 iters/s
+
+running (0m06.0s), 000/100 VUs, 2878 complete and 0 interrupted iterations
+transfers   [  10% ] 000/100 VUs  0m05.8s/1m0s  500.00 iters/s
+
+running (0m07.0s), 001/100 VUs, 3378 complete and 0 interrupted iterations
+transfers   [  11% ] 001/100 VUs  0m06.8s/1m0s  500.00 iters/s
+
+running (0m08.0s), 001/100 VUs, 3877 complete and 0 interrupted iterations
+transfers   [  13% ] 001/100 VUs  0m07.8s/1m0s  500.00 iters/s
+
+running (0m09.0s), 001/100 VUs, 4378 complete and 0 interrupted iterations
+transfers   [  15% ] 001/100 VUs  0m08.8s/1m0s  500.00 iters/s
+
+running (0m10.0s), 001/100 VUs, 4877 complete and 0 interrupted iterations
+transfers   [  16% ] 000/100 VUs  0m09.8s/1m0s  500.00 iters/s
+
+running (0m11.0s), 000/100 VUs, 5378 complete and 0 interrupted iterations
+transfers   [  18% ] 000/100 VUs  0m10.8s/1m0s  500.00 iters/s
+
+running (0m12.0s), 000/100 VUs, 5878 complete and 0 interrupted iterations
+transfers   [  20% ] 000/100 VUs  0m11.8s/1m0s  500.00 iters/s
+
+running (0m13.0s), 001/100 VUs, 6378 complete and 0 interrupted iterations
+transfers   [  21% ] 001/100 VUs  0m12.8s/1m0s  500.00 iters/s
+
+running (0m14.0s), 001/100 VUs, 6877 complete and 0 interrupted iterations
+transfers   [  23% ] 001/100 VUs  0m13.8s/1m0s  500.00 iters/s
+
+running (0m15.0s), 001/100 VUs, 7377 complete and 0 interrupted iterations
+transfers   [  25% ] 000/100 VUs  0m14.8s/1m0s  500.00 iters/s
+
+running (0m16.0s), 000/100 VUs, 7878 complete and 0 interrupted iterations
+transfers   [  26% ] 000/100 VUs  0m15.8s/1m0s  500.00 iters/s
+
+running (0m17.0s), 000/100 VUs, 8378 complete and 0 interrupted iterations
+transfers   [  28% ] 001/100 VUs  0m16.8s/1m0s  500.00 iters/s
+
+running (0m18.0s), 000/100 VUs, 8877 complete and 0 interrupted iterations
+transfers   [  30% ] 001/100 VUs  0m17.8s/1m0s  500.00 iters/s
+
+running (0m19.0s), 001/100 VUs, 9378 complete and 0 interrupted iterations
+transfers   [  31% ] 001/100 VUs  0m18.8s/1m0s  500.00 iters/s
+
+running (0m20.0s), 001/100 VUs, 9877 complete and 0 interrupted iterations
+transfers   [  33% ] 001/100 VUs  0m19.8s/1m0s  500.00 iters/s
+
+running (0m21.0s), 001/100 VUs, 10378 complete and 0 interrupted iterations
+transfers   [  35% ] 001/100 VUs  0m20.8s/1m0s  500.00 iters/s
+
+running (0m22.0s), 000/100 VUs, 10878 complete and 0 interrupted iterations
+transfers   [  36% ] 000/100 VUs  0m21.8s/1m0s  500.00 iters/s
+
+running (0m23.0s), 001/100 VUs, 11378 complete and 0 interrupted iterations
+transfers   [  38% ] 001/100 VUs  0m22.8s/1m0s  500.00 iters/s
+
+running (0m24.0s), 000/100 VUs, 11878 complete and 0 interrupted iterations
+transfers   [  40% ] 000/100 VUs  0m23.8s/1m0s  500.00 iters/s
+
+running (0m25.0s), 001/100 VUs, 12378 complete and 0 interrupted iterations
+transfers   [  41% ] 001/100 VUs  0m24.8s/1m0s  500.00 iters/s
+
+running (0m26.0s), 001/100 VUs, 12877 complete and 0 interrupted iterations
+transfers   [  43% ] 000/100 VUs  0m25.8s/1m0s  500.00 iters/s
+
+running (0m27.0s), 001/100 VUs, 13378 complete and 0 interrupted iterations
+transfers   [  45% ] 001/100 VUs  0m26.8s/1m0s  500.00 iters/s
+
+running (0m28.0s), 001/100 VUs, 13878 complete and 0 interrupted iterations
+transfers   [  46% ] 001/100 VUs  0m27.8s/1m0s  500.00 iters/s
+
+running (0m29.0s), 001/100 VUs, 14377 complete and 0 interrupted iterations
+transfers   [  48% ] 001/100 VUs  0m28.8s/1m0s  500.00 iters/s
+
+running (0m30.0s), 000/100 VUs, 14878 complete and 0 interrupted iterations
+transfers   [  50% ] 001/100 VUs  0m29.8s/1m0s  500.00 iters/s
+
+running (0m31.0s), 009/100 VUs, 15369 complete and 0 interrupted iterations
+transfers   [  51% ] 009/100 VUs  0m30.8s/1m0s  500.00 iters/s
+
+running (0m32.0s), 001/100 VUs, 15877 complete and 0 interrupted iterations
+transfers   [  53% ] 001/100 VUs  0m31.8s/1m0s  500.00 iters/s
+
+running (0m33.0s), 001/100 VUs, 16378 complete and 0 interrupted iterations
+transfers   [  55% ] 001/100 VUs  0m32.8s/1m0s  500.00 iters/s
+
+running (0m34.0s), 000/100 VUs, 16878 complete and 0 interrupted iterations
+transfers   [  56% ] 000/100 VUs  0m33.8s/1m0s  500.00 iters/s
+
+running (0m35.0s), 001/100 VUs, 17378 complete and 0 interrupted iterations
+transfers   [  58% ] 001/100 VUs  0m34.8s/1m0s  500.00 iters/s
+
+running (0m36.0s), 001/100 VUs, 17877 complete and 0 interrupted iterations
+transfers   [  60% ] 001/100 VUs  0m35.8s/1m0s  500.00 iters/s
+
+running (0m37.0s), 001/100 VUs, 18378 complete and 0 interrupted iterations
+transfers   [  61% ] 001/100 VUs  0m36.8s/1m0s  500.00 iters/s
+
+running (0m38.0s), 001/100 VUs, 18878 complete and 0 interrupted iterations
+transfers   [  63% ] 001/100 VUs  0m37.8s/1m0s  500.00 iters/s
+
+running (0m39.0s), 001/100 VUs, 19378 complete and 0 interrupted iterations
+transfers   [  65% ] 001/100 VUs  0m38.8s/1m0s  500.00 iters/s
+
+running (0m40.0s), 001/100 VUs, 19878 complete and 0 interrupted iterations
+transfers   [  66% ] 001/100 VUs  0m39.8s/1m0s  500.00 iters/s
+
+running (0m41.0s), 001/100 VUs, 20378 complete and 0 interrupted iterations
+transfers   [  68% ] 001/100 VUs  0m40.8s/1m0s  500.00 iters/s
+
+running (0m42.0s), 000/100 VUs, 20877 complete and 0 interrupted iterations
+transfers   [  70% ] 000/100 VUs  0m41.8s/1m0s  500.00 iters/s
+
+running (0m43.0s), 001/100 VUs, 21378 complete and 0 interrupted iterations
+transfers   [  71% ] 001/100 VUs  0m42.8s/1m0s  500.00 iters/s
+
+running (0m44.0s), 001/100 VUs, 21878 complete and 0 interrupted iterations
+transfers   [  73% ] 001/100 VUs  0m43.8s/1m0s  500.00 iters/s
+
+running (0m45.0s), 001/100 VUs, 22377 complete and 0 interrupted iterations
+transfers   [  75% ] 000/100 VUs  0m44.8s/1m0s  500.00 iters/s
+
+running (0m46.0s), 001/100 VUs, 22878 complete and 0 interrupted iterations
+transfers   [  76% ] 001/100 VUs  0m45.8s/1m0s  500.00 iters/s
+
+running (0m47.0s), 001/100 VUs, 23378 complete and 0 interrupted iterations
+transfers   [  78% ] 001/100 VUs  0m46.8s/1m0s  500.00 iters/s
+
+running (0m48.0s), 001/100 VUs, 23878 complete and 0 interrupted iterations
+transfers   [  80% ] 001/100 VUs  0m47.8s/1m0s  500.00 iters/s
+
+running (0m49.0s), 000/100 VUs, 24377 complete and 0 interrupted iterations
+transfers   [  81% ] 001/100 VUs  0m48.8s/1m0s  500.00 iters/s
+
+running (0m50.0s), 001/100 VUs, 24878 complete and 0 interrupted iterations
+transfers   [  83% ] 001/100 VUs  0m49.8s/1m0s  500.00 iters/s
+
+running (0m51.0s), 001/100 VUs, 25377 complete and 0 interrupted iterations
+transfers   [  85% ] 000/100 VUs  0m50.8s/1m0s  500.00 iters/s
+
+running (0m52.0s), 001/100 VUs, 25877 complete and 0 interrupted iterations
+transfers   [  86% ] 001/100 VUs  0m51.8s/1m0s  500.00 iters/s
+
+running (0m53.0s), 000/100 VUs, 26378 complete and 0 interrupted iterations
+transfers   [  88% ] 000/100 VUs  0m52.8s/1m0s  500.00 iters/s
+
+running (0m54.0s), 000/100 VUs, 26878 complete and 0 interrupted iterations
+transfers   [  90% ] 000/100 VUs  0m53.8s/1m0s  500.00 iters/s
+
+running (0m55.0s), 001/100 VUs, 27378 complete and 0 interrupted iterations
+transfers   [  91% ] 001/100 VUs  0m54.8s/1m0s  500.00 iters/s
+
+running (0m56.0s), 001/100 VUs, 27878 complete and 0 interrupted iterations
+transfers   [  93% ] 001/100 VUs  0m55.8s/1m0s  500.00 iters/s
+
+running (0m57.0s), 001/100 VUs, 28377 complete and 0 interrupted iterations
+transfers   [  95% ] 000/100 VUs  0m56.8s/1m0s  500.00 iters/s
+
+running (0m58.0s), 001/100 VUs, 28878 complete and 0 interrupted iterations
+transfers   [  96% ] 001/100 VUs  0m57.8s/1m0s  500.00 iters/s
+
+running (0m59.0s), 001/100 VUs, 29378 complete and 0 interrupted iterations
+transfers   [  98% ] 001/100 VUs  0m58.8s/1m0s  500.00 iters/s
+
+running (1m00.0s), 001/100 VUs, 29877 complete and 0 interrupted iterations
+transfers   [ 100% ] 001/100 VUs  0m59.8s/1m0s  500.00 iters/s
+
+running (1m01.0s), 000/100 VUs, 30001 complete and 0 interrupted iterations
+transfers ✓ [ 100% ] 000/100 VUs  1m0s  500.00 iters/s
+time="2026-10-12T08:17:56Z" level=info msg="reconcile OK: {\"total_postings_sum\":0,\"unbalanced_transfers\":0,\"accounts_with_balance_drift\":0,\"transfers_without_event\":0,\"unpublished_events\":0,\"unprocessed_events\":0}" source=console
+
+     ✓ transfer accepted or refused cleanly
+     ✓ retry is a replay
+     ✓ retry returns the same transfer
+
+   ✓ checks.........................: 100.00% 35843 out of 35843
+     data_received..................: 11 MB   184 kB/s
+     data_sent......................: 9.5 MB  154 kB/s
+     http_req_blocked...............: avg=5.26µs  p(50)=1.45µs   p(95)=5.45µs  p(99)=13.61µs max=16.85ms 
+     http_req_connecting............: avg=2.99µs  p(50)=0s       p(95)=0s      p(99)=0s      max=16.79ms 
+     http_req_duration..............: avg=1.24ms  p(50)=834.16µs p(95)=2.08ms  p(99)=9.51ms  max=360.8ms 
+       { expected_response:true }...: avg=1.24ms  p(50)=834.16µs p(95)=2.08ms  p(99)=9.51ms  max=360.8ms 
+     ✓ { name:transfer }............: avg=1.23ms  p(50)=836.18µs p(95)=2.09ms  p(99)=9.63ms  max=84.52ms 
+     http_req_failed................: 0.00%   0 out of 33325
+     ✓ { expected_response:true }...: 0.00%   0 out of 33325
+     http_req_receiving.............: avg=17.53µs p(50)=13.41µs  p(95)=33.08µs p(99)=87.06µs max=2.34ms  
+     http_req_sending...............: avg=11.14µs p(50)=9.29µs   p(95)=19µs    p(99)=43.68µs max=1.19ms  
+     http_req_tls_handshaking.......: avg=0s      p(50)=0s       p(95)=0s      p(99)=0s      max=0s      
+     http_req_waiting...............: avg=1.21ms  p(50)=808.75µs p(95)=2.02ms  p(99)=9.39ms  max=360.32ms
+     http_reqs......................: 33325   539.973044/s
+     idempotent_retries.............: 2921    47.32967/s
+     iteration_duration.............: avg=1.45ms  p(50)=950.62µs p(95)=2.48ms  p(99)=11.94ms max=84.68ms 
+     iterations.....................: 30001   486.113467/s
+     vus............................: 0       min=0              max=9  
+     vus_max........................: 100     min=100            max=100
+
+
+running (1m01.7s), 000/100 VUs, 30001 complete and 0 interrupted iterations
+transfers ✓ [ 100% ] 000/100 VUs  1m0s  500.00 iters/s

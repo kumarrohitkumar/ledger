@@ -17,6 +17,7 @@ import (
 	"github.com/twmb/franz-go/pkg/kgo"
 
 	"github.com/kumarrohitkumar/ledger/internal/ledger"
+	"github.com/kumarrohitkumar/ledger/internal/metrics"
 )
 
 type Consumer struct {
@@ -92,8 +93,10 @@ func (c *Consumer) PollOnce(ctx context.Context) (applied, duplicates int, err e
 		}
 		if ok {
 			applied++
+			metrics.ConsumerEvents.WithLabelValues("applied").Inc()
 		} else {
 			duplicates++
+			metrics.ConsumerEvents.WithLabelValues("duplicate").Inc()
 		}
 	}
 	if len(records) == 0 {

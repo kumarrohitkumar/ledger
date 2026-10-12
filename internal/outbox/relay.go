@@ -13,6 +13,8 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/twmb/franz-go/pkg/kgo"
+
+	"github.com/kumarrohitkumar/ledger/internal/metrics"
 )
 
 type Relay struct {
@@ -79,7 +81,11 @@ func (r *Relay) RunOnce(ctx context.Context) (int, error) {
 	if _, err := tx.Exec(ctx, `UPDATE outbox SET published_at = now() WHERE id = ANY($1)`, ids); err != nil {
 		return 0, err
 	}
-	return len(ids), tx.Commit(ctx)
+	if err := tx.Commit(ctx); err != nil {
+		return 0, err
+	}
+	metrics.OutboxPublished.Add(float64(len(ids)))
+	return len(ids), nil
 }
 
 // Run drains the outbox continuously until ctx is cancelled.

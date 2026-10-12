@@ -13,6 +13,7 @@ import (
 	"github.com/google/uuid"
 
 	"github.com/kumarrohitkumar/ledger/internal/ledger"
+	"github.com/kumarrohitkumar/ledger/internal/metrics"
 )
 
 type API struct {
@@ -30,7 +31,7 @@ func (a *API) Routes() http.Handler {
 	mux.HandleFunc("POST /v1/transfers", a.createTransfer)
 	mux.HandleFunc("GET /v1/transfers/{id}", a.getTransfer)
 	mux.HandleFunc("GET /v1/reconcile", a.reconcile)
-	return withTimeout(mux, 10*time.Second)
+	return withTimeout(metrics.Instrument(mux), 10*time.Second)
 }
 
 func (a *API) createAccount(w http.ResponseWriter, r *http.Request) {
@@ -85,6 +86,14 @@ func (a *API) createTransfer(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	t, replayed, err := a.svc.Transfer(r.Context(), r.Header.Get("Idempotency-Key"), in)
+	switch {
+	case replayed:
+		metrics.Transfers.WithLabelValues("replayed").Inc()
+	case err == nil:
+		metrics.Transfers.WithLabelValues("created").Inc()
+	default:
+		metrics.Transfers.WithLabelValues("refused").Inc()
+	}
 	if replayed {
 		w.Header().Set("Idempotent-Replayed", "true")
 	}

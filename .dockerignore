@@ -1,0 +1,4 @@
+bin/
+.git/
+loadtest/results/
+*.md
